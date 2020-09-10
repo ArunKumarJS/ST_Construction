@@ -1,0 +1,84 @@
+#gallery{
+    background-image: linear-gradient(to right, rgba(126, 213, 111, 0.8), rgba(40, 180, 131, 0.8));
+    // padding: 0 5rem;
+	min-height: 100vh;
+	font-family: "poppins";
+	.head{
+        padding-top: 8rem;
+        padding-bottom: 2rem;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        h3{
+            margin-top: 2rem;
+        }
+        .border{
+            width: 80px;
+            height: 6px;
+            background: white;
+            margin: auto;
+            // margin-top: 1rem;
+        }
+}
+
+// filter Menu
+	.filters{
+		width: 100%;
+		text-align: center;
+		ul{
+			list-style: none;
+			padding: 20px 0;
+			li{
+				display: inline;
+				padding: 10px 25px;
+				font-size: 14px;
+				color: #636363;
+				font-weight: 500;
+				cursor: pointer;
+				text-transform: uppercase;
+				letter-spacing: 0.2em;
+				transition: all 1s ease;
+
+				.active{
+					color: #000;
+					background: #fff;
+				}
+				&:hover{
+					color: black;
+					background: #fff;
+					transition: all 1s ease;
+				}
+			}
+		}
+	}
+
+// image Container
+	.container{
+		width: 90%;
+		min-height: 100%;
+		margin: 0 2% 0 auto;
+
+		.content{
+			a:hover{
+				opacity: 0.5;
+			}
+			img{
+				width: 300px;
+				height: 200px;
+				margin: 10px;
+				box-shadow: 2px 2px 2px rgba(122, 122, 122, 0.5);
+			}
+		}
+	}
+
+}
+
+.lightboxoverlay{
+	outline: 0;
+}
+
+// Media Queries
+
+@media screen and (max-width: 450px){
+
+}

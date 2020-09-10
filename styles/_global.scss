@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$primary-color: #ddfee4;
+$secondary-color: #28cc9e;
+$bg-color: #196b69;
+$text-color: #132f2b;
+
+$header1: 2.5rem;
+$header2: 6.5rem;
+$header3: 3.5rem;
+$header4: 2.5rem;
+$text: 2rem ;
+
+html{
+    font-size: 62.5%;
+    font-family: "poppins";
+    scroll-behavior: smooth;
+    // animation: page-load 2s ease-in;
+}
+
+h1{
+    font-size: $header1;
+}
+
+h2{
+    font-size: $header2;
+}
+
+h3{
+    font-size: $header3;
+}
+
+h4,
+h5{
+    font-size: $header4;
+}
+
+input,
+label,
+button,
+li,
+a,
+p{
+    font-size: $text;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+@media screen and (max-width: 912px){
+    html{
+        font-size: 50%;
+    }
+    body{
+        // display: none;
+    }
+
+}
+
+
+// Animation 
+
+@keyframes page-load{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

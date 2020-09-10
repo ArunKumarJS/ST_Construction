@@ -1,0 +1,97 @@
+.footer{
+    width: 100%;
+    min-height: 20vh;
+    background: yellowgreen;
+    // background-image: linear-gradient(to right, rgba(126, 213, 111, 0.8), rgba(40, 180, 131, 0.8));
+    .footer-div{
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .contact{
+            flex: 1 1 25rem;
+            .head{
+                margin-bottom: 3rem;
+                h3{
+                    color: white;
+                }
+                .border{
+                    width: 80px;
+                    height: 6px;
+                    background: white;
+                    
+                }
+            }
+            a{
+                display: block;
+                // margin-bottom: 1rem;
+                padding-bottom: 2rem;
+                .text{
+                    padding-left: 1rem;
+                }
+            }
+
+
+
+        }
+        .social-links{
+            flex: 1 1 25rem;
+            text-align: center;
+            .head{
+                margin-bottom: 3rem;
+                h3{
+                    color: white;
+                }
+                .border{
+                    margin: auto;
+                    width: 80px;
+                    height: 6px;
+                    background: white;
+                    
+                }
+                
+            }
+            .btn{
+                background-color: white;
+                display: inline-block;
+                // position: relative;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                // padding: 1rem;
+                margin: 2rem;
+                color: yellowgreen;
+                i{
+                    line-height: 50px;
+                }
+                        &:hover{
+                            box-shadow: 2px 2px 2px rgba($color: #8f8f8f, $alpha: 0.1);
+                        }
+            }
+        }
+    }
+}
+
+// Media Queries
+
+@media screen and (max-width: 920px){
+    html{
+        font-size: 50%;
+    }
+
+
+}
+
+// Media for Small Device
+
+@media screen and (max-width: 720px){
+    .footer-div{
+        text-align: center;
+    }
+    .border{
+        margin: 0rem auto;
+    }
+}

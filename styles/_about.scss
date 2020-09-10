@@ -1,0 +1,102 @@
+.about{
+    // display: block;
+    // min-height: 80vh;
+    background-image: linear-gradient(to right, rgba(126, 213, 111, 0.8), rgba(40, 180, 131, 0.8));
+    
+    .about-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        // background-color: yellowgreen;
+        width: 90%;
+        min-height: 80vh;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+        // padding-top: 10rem;
+        .about-head{
+            flex: 1 1 45rem;
+            padding-top: 5rem;
+            padding-bottom: 2rem;
+            text-align: center;
+            color: rgb(255, 253, 253);
+            align-self: center;
+            padding-right: 5rem;
+            h3{
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-top: 2rem;
+            }
+            .border{
+
+                width: 80px;
+                height: 6px;
+                background: white;
+                margin: 0 auto 5rem auto;
+                // margin-top: 1rem;
+            }
+            p{
+                line-height: 5rem;
+                
+                .bg-text{
+                    // color: black;
+                    text-transform: uppercase;
+                    background-color: yellowgreen;
+                    padding: 0.5rem;
+                    letter-spacing: 0.5rem;
+                }
+            }
+        }
+        .about-image{
+            flex: 1 1 45rem;
+            img{
+
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.small-box{
+    background-color: yellowgreen;
+    width: 100%;
+
+    .yellow-box{
+        min-height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+        .text-1{
+            padding: 3rem;
+
+        }
+    }
+}
+
+#fixed{
+    background: url("/img/image2.jpg") no-repeat center center fixed;
+    display: table;
+    height: 400px;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+}
+
+// Media Queries
+@media screen and (max-width: 920px){
+    .about{
+        // display: none;
+        .about-container{
+            width: 100%;
+            .about-head{
+
+                padding: 1rem;
+            }
+        }
+
+    }
+
+}
